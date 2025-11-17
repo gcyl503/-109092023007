@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漳州旅游指南 - 探索山海闽南</title>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+
+            --primary-green: #18BC9C;
+            --dark-green: #128F76;
+            --bg-white: rgba(255, 255, 255, 0.9);
+            --text-dark: #333;
+        }
+
+
+        body {
+            background-image: url('zhangzhou-panorama.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+
+        .main-container {
+            background-color: var(--bg-white);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0 8px 32px rgba(24, 188, 156, 0.1);
+        }
+
+
+        .navbar-custom {
+            background-color: var(--primary-green) !important;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+
+        .btn-primary {
+            background-color: var(--primary-green);
+            border-color: var(--primary-green);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-green);
+            border-color: var(--dark-green);
+            transform: translateY(-1px);
+        }
+
+
+        .tab-content {
+            margin-top: 20px;
+            padding: 25px;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+
+        .table {
+            margin-bottom: 0;
+        }
+
+        .table th {
+            background-color: var(--primary-green) !important;
+            border: none;
+            font-weight: 600;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .table td {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+ 
+        .food-card {
+            border: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .food-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .food-card-header {
+            background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+            color: white;
+            border: none;
+        }
+
+ 
+        @media (max-width: 768px) {
+            .main-container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            .tab-content {
+                padding: 15px;
+            }
+        }
+
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container main-container mt-4">
+        
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">🌊 探索漳州</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home" data-tab="home">首页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scenic" data-tab="scenic">推荐景区</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#food" data-tab="food">特色美食</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link external-link" 
+                               href="https://www.douyin.com/user/MS4wLjABAAAA-O0echwZ_eohz34adtsnX-UatQnAWqUVEWOGtP8SQWt0Oepii2qWnguLSP9-upYc?from_tab_name=main" 
+                               target="_blank">
+                                 抖音漳州文旅
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="tab-content fade-in" id="home">
+            <div class="text-center mb-4">
+                <h2 class="text-primary">欢迎使用”探索漳州“旅游指南</h2>
+                <p class="lead text-muted">山海相依，闽韵流长</p>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <p class="fs-5">
+                        漳州，福建南部的璀璨明珠，拥有世界遗产土楼、闽南水乡风情、绝美滨海风光。
+                        这是一座"山海相依、文化底蕴深厚"的旅游胜地，跟随我们探索漳州的美景与美食！
+                    </p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">世界遗产 - 福建土楼（南靖、华安）</li>
+                                <li class="mb-2">滨海度假胜地 - 东山岛、火山岛</li>
+                                <li class="mb-2">滨海度假胜地 - 东山岛、火山岛</li>
+                                <li class="mb-2"> 闽南文化发源地 - 漳州古城、埭美古村</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"> 特色美食 - 沙茶面、五香卷、盐鸡等</li>
+                                <li class="mb-2"> 抖音漳州文旅官方账号实时更新</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 text-center">
+                    <a href="https://www.douyin.com/user/MS4wLjABAAAA-O0echwZ_eohz34adtsnX-UatQnAWqUVEWOGtP8SQWt0Oepii2qWnguLSP9-upYc?from_tab_name=main" 
+                       target="_blank" 
+                       class="btn btn-primary btn-lg">
+                        关注抖音漳州文旅
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-content fade-in" id="scenic" style="display: none;">
+            <div class="text-center mb-4">
+                <h2 class="text-primary"> 漳州热门景区 TOP8</h2>
+                <p class="text-muted">精选漳州最具魅力的旅游景点</p>
+            </div>
+            
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th class="text-white"> 排名</th>
+                            <th class="text-white">景区名称</th>
+                            <th class="text-white"> 所在区域</th>
+                            <th class="text-white"> 推荐指数</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>南靖土楼群（田螺坑）</td><td>南靖县</td><td>★★★★★</td></tr>
+                        <tr><td>2</td><td>东山岛（南门湾）</td><td>东山县</td><td>★★★★★</td></tr>
+                        <tr><td>3</td><td>漳州古城</td><td>芗城区</td><td>★★★★☆</td></tr>
+                        <tr><td>4</td><td>火山岛自然生态风景区</td><td>漳浦县</td><td>★★★★☆</td></tr>
+                        <tr><td>5</td><td>华安大地土楼群</td><td>华安县</td><td>★★★★☆</td></tr>
+                        <tr><td>6</td><td>埭美古村</td><td>龙海区</td><td>★★★★</td></tr>
+                        <tr><td>7</td><td>云洞岩风景区</td><td>龙文区</td><td>★★★★</td></tr>
+                        <tr><td>8</td><td>六鳌翡翠湾</td><td>漳浦县</td><td>★★★☆</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="tab-content fade-in" id="food" style="display: none;">
+            <div class="text-center mb-4">
+                <h2 class="text-primary">漳州特色美食精选</h2>
+                <p class="text-muted">品味闽南传统美食文化</p>
+            </div>
+            
+            <div class="row">
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card food-card h-100">
+                        <div class="card-header food-card-header">
+                            <h5 class="mb-0"> 经典小吃 TOP5</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">漳州卤面 - 鲜香浓郁、配料丰富</li>
+                            <li class="list-group-item">五香卷 - 外酥里嫩、咸香适口</li>
+                            <li class="list-group-item">东山岛盐鸡 - 皮脆肉嫩、咸香入味</li>
+                            <li class="list-group-item">沙茶面 - 汤底醇厚、甜辣鲜香</li>
+                            <li class="list-group-item">麻糍 - 软糯香甜、馅料饱满</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card food-card h-100">
+                        <div class="card-header food-card-header">
+                            <h5 class="mb-0"> 特色甜品 TOP5</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">手抓面 - Q弹劲道、酱料香浓</li>
+                            <li class="list-group-item">四果汤 - 清凉解暑、配料丰富</li>
+                            <li class="list-group-item">杜浔酥糖 - 香甜酥脆、不粘牙</li>
+                            <li class="list-group-item">平和南胜麻枣 - 酥脆香甜、入口即化</li>
+                            <li class="list-group-item">诏安猫仔粥 - 食材新鲜、粥底鲜甜</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-info mt-4">
+                <strong> 温馨提示：</strong>以上美食在漳州各大市场、小吃店均可找到，街头巷尾的传统老店往往有着最正宗的味道。
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        class TabManager {
+            constructor() {
+                this.init();
+                this.bindEvents();
+            }
+
+            init() {
+
+                this.showTab('home');
+            }
+
+            bindEvents() {
+                document.querySelectorAll('[data-tab]').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const tabId = link.getAttribute('data-tab');
+                        this.showTab(tabId);
+                    });
+                });
+            }
+
+            showTab(tabId) {
+
+                document.querySelectorAll('.tab-content').forEach(tab => {
+                    tab.style.display = 'none';
+                    tab.classList.remove('fade-in');
+                });
+
+
+                const targetTab = document.getElementById(tabId);
+                if (targetTab) {
+                    targetTab.style.display = 'block';
+
+                    setTimeout(() => targetTab.classList.add('fade-in'), 10);
+                }
+
+
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                document.querySelector(`[data-tab="${tabId}"]`)?.classList.add('active');
+
+
+                if (targetTab) {
+                    targetTab.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        }
+
+
+        document.querySelectorAll('.external-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+
+            });
+        });
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new TabManager();
+            
+
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s ease';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
